@@ -18,7 +18,6 @@
       <tbody>
         <tr v-for="(categoria, index) in categorias" :key="index">
           <th scope="row">{{index + 1}}</th>
-          <td>{{categoria.categoria_id}}</td>
           <td>{{categoria.categoria_nombre}}</td>
           <td>{{categoria.categoria_descripcion}}</td>
           <td>
@@ -42,7 +41,7 @@ import axios from 'axios';
 import Swal from 'sweetalert2';
 
 export default {
-  name: 'Categorias',
+  name: 'categorias',
   data() {
     return {
       categorias: []
